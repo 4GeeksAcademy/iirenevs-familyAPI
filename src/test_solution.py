@@ -1,6 +1,7 @@
 import pytest, os, sys, tempfile, mock, json
 from flask import Flask
 
+
 @pytest.fixture
 def client():
     with mock.patch('flask.Flask', lambda x: Flask(x)):
